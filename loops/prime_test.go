@@ -19,7 +19,7 @@ func TestIsPrime(t *testing.T) {
 	for _, tc := range cases {
 		got := IsPrime(tc.arg1)
 		if tc.want != got {
-			t.Errorf("Expected %t, but got %t", tc.want, got)
+			t.Errorf("Expected %t from IsPrime(%v), but got %t", tc.want, tc.arg1, got)
 		}
 	}
 }
