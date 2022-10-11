@@ -12,7 +12,8 @@ func TestIsOdd(t *testing.T) {
 		{0, false},
 		{1, true},
 		{2, false},
-		{3, true}}
+		{3, true},
+	}
 
 	for _, tc := range cases {
 		got := IsOdd(tc.arg1)
