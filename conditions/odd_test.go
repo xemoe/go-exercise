@@ -2,12 +2,12 @@ package conditions
 
 import "testing"
 
-type testCase struct {
-	arg1 int
-	want bool
-}
-
 func TestIsOdd(t *testing.T) {
+	type testCase struct {
+		arg1 int
+		want bool
+	}
+
 	cases := []testCase{
 		{0, false},
 		{1, true},

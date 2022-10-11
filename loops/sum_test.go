@@ -2,12 +2,12 @@ package loops
 
 import "testing"
 
-type testCase struct {
-	arg1 int
-	want int
-}
-
 func TestSumOfFirst(t *testing.T) {
+	type testCase struct {
+		arg1 int
+		want int
+	}
+
 	cases := []testCase{
 		{0, 0},
 		{1, 1},
