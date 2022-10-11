@@ -7,10 +7,6 @@ type testCase struct {
 	want int
 }
 
-func SumOfFirst(n int) int {
-	return 0
-}
-
 func TestSumOfFirst(t *testing.T) {
 	cases := []testCase{
 		{0, 0},
