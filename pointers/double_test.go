@@ -2,10 +2,6 @@ package pointers
 
 import "testing"
 
-func Double(n *int) {
-	*n = *n * 2
-}
-
 func TestDouble(t *testing.T) {
 	type testCase struct {
 		arg1 int
