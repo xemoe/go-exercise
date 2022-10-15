@@ -16,7 +16,7 @@ func TestSumOfFirst(t *testing.T) {
 	}
 
 	for _, tc := range cases {
-		got := SumOfFirst(tc.arg1)
+		got := SumOfFirst(tc.arg1, 0)
 		if tc.want != got {
 			t.Errorf("Expected %d, but got %d", tc.want, got)
 		}

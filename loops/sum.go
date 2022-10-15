@@ -1,9 +1,10 @@
 package loops
 
-func SumOfFirst(n int) int {
-	sum := 0
-	for i := 0; i <= n; i++ {
-		sum += i
+func SumOfFirst(n int, sum int) int {
+	if n >= 0 {
+		sum += n
+		n--
+		return SumOfFirst(n, sum)
 	}
 
 	return sum
